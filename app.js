@@ -60,10 +60,16 @@ function removeOverlayAndIcon(){
         overlay.style.display="none";
         })
 
+        const ProjectDetails = document.querySelectorAll('.project_details')
+        ProjectDetails.forEach((details)=>{
+        details.style.display="block";
+        })
+
         closeBtns.forEach((closeBtn)=>{
         closeBtn.style.display='block';
-        })      
-}
+        })
+        
+        }
 
 // Back To normal
 function addOverlayAndIcon(){
@@ -80,9 +86,14 @@ function addOverlayAndIcon(){
         overlay.style.display="block";
         })
 
+        const ProjectDetails = document.querySelectorAll('.project_details')
+        ProjectDetails.forEach((details)=>{
+        details.style.display="none";
+        })
+
         closeBtns.forEach((closeBtn)=>{
             closeBtn.style.display='none';
-            }) 
+        }) 
 }
 
  

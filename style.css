@@ -26,6 +26,7 @@ a {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -96,9 +97,11 @@ nav .nav__menu {
   background: beige;
   width: 100%;
   min-height: 30vh;
-  transition: all 0.4s linear;
   position: absolute;
   top: 100%;
+  transition: all 0.5s linear;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 nav .nav__menu .nav__item {
@@ -140,7 +143,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
 /* FHL HERO CSS---------------------------------------------------------- */
 .fhl__hero {
   width: 100%;
-  min-height: 83.7vh;
+  min-height: 86vh;
   background-image: url(img/bg/hero-big.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -240,12 +243,13 @@ nav .nav__menu .nav__item .nav__links:hover a {
 
 .fhl__project .container .project_box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 2rem;
   grid-auto-flow: dense;
 }
 .fhl__project .container .project_box .project_img_box {
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
 .fhl__project .container .project_box .project_img_box .overlay {
   background-color: rgba(78, 78, 78, 0.5);
@@ -285,23 +289,26 @@ nav .nav__menu .nav__item .nav__links:hover a {
 }
 .fhl__project .container .project_box .project_img_box .close_icon {
   position: absolute;
-  margin: 1rem;
-  color: #82bd3e;
+  margin: 2rem;
+  color: #fff;
   font-size: 2.5rem;
   top: 0;
   right: 0;
   cursor: pointer;
   display: none;
+  background-color: #82bd3e;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
 }
 .full_image {
   position: fixed !important;
   width: 75vh;
   height: 85vh;
   z-index: 1000;
-  /* margin: 0 auto; */
   top: 50px;
   left: 50%;
   transform: translate(-50%);
+  transition: all 0.4s ease;
 }
 .blur {
   width: 100vw;
@@ -312,4 +319,40 @@ nav .nav__menu .nav__item .nav__links:hover a {
   top: 0px;
   left: 50%;
   transform: translate(-50%);
+}
+.project_details {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+  display: none;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+.project_details h2 {
+  margin-bottom: -10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.project_details p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.project_details .btn__main {
+  padding: 0.5rem;
+}
+.project_details .details_icon {
+  padding-right: 1rem;
+  color: #82bd3e;
+  font-size: 2.4rem;
+}
+
+.scroll_icon {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 2rem;
+  font-size: 3rem;
+  color: #82bd3e;
+  z-index: 2000;
 }
