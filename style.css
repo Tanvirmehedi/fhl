@@ -1,0 +1,315 @@
+html,
+button,
+div,
+body,
+html::after,
+html::before,
+button::before,
+button::after,
+div::after,
+div::before,
+body::after,
+body::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* FHL HEADER CSS---------------------------------------------------------- */
+
+header .mail {
+  background-color: #82bd3e;
+  text-align: center;
+  padding: 0.3rem;
+  color: #fff;
+  font-size: 1.4em;
+  font-style: italic;
+}
+header .mail .mail__icon {
+  padding-right: 0.8rem;
+  font-size: 1.8rem;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo a img {
+  width: 70%;
+  margin-top: -0.6rem;
+}
+nav .logo .phone {
+  font-size: 1.5rem;
+  border: 1px solid #b0c599;
+  padding: 0.6rem;
+  border-radius: 5px;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+nav .logo .phone .phone__icon {
+  color: #82bd3e;
+  padding-right: 3px;
+}
+
+nav .hamburger {
+  font-size: 3rem;
+  color: #82bd3e;
+  cursor: pointer;
+}
+nav .hamburger i:active {
+  color: #222;
+  outline: 0;
+}
+
+nav .nav__menu {
+  background: beige;
+  width: 100%;
+  min-height: 30vh;
+  transition: all 0.4s linear;
+  position: absolute;
+  top: 100%;
+}
+
+nav .nav__menu .nav__item {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+nav .nav__menu .nav__item .nav__links {
+  font-size: 1.5rem;
+  margin: 0.8rem 0;
+  font-weight: bold;
+}
+nav .nav__menu .nav__item .nav__links a {
+  color: rgb(75, 75, 75);
+  transition: all 0.4s linear;
+  letter-spacing: 1px;
+}
+nav .nav__menu .nav__item .nav__links a:active {
+  color: #82bd3e;
+}
+nav .nav__menu .nav__item .nav__links:hover a {
+  color: #82bd3e;
+}
+.dropDown {
+  cursor: pointer;
+}
+
+.dropDown .dropDown__menu ul li:hover a {
+  color: rgb(82, 80, 80) !important;
+}
+
+.dropDown__menu ul li {
+  margin: 1rem 0;
+}
+
+/* FHL HERO CSS---------------------------------------------------------- */
+.fhl__hero {
+  width: 100%;
+  min-height: 83.7vh;
+  background-image: url(img/bg/hero-big.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.fhl__hero .container {
+  outline: 0;
+}
+
+.fhl__hero .container .fhl__hero-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+}
+
+.fhl__hero .container .fhl__hero-text .hero__title {
+  color: #fff;
+  font-size: 4rem;
+}
+.fhl__hero .container .fhl__hero-text .hero__title span {
+  margin-bottom: -1.4rem;
+  color: #82bd3e;
+  font-size: 4rem;
+  display: block;
+}
+
+.fhl__hero .container .fhl__hero-text .hero__subtext {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: rgb(85, 84, 84);
+  margin-top: -0.2rem;
+}
+
+.fhl__hero .container .fhl__hero-text .hero__address {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+}
+
+.fhl__hero .container .fhl__hero-text .hero__address .fa-map-marker-alt {
+  color: #82bd3e;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+/* CSS BASIC CSS-------------------------------------------------------------------------------------------------------------------------------------------------- */
+.fhl__title {
+  text-align: center;
+}
+.fhl__title .title__text {
+  color: #82bd3e;
+  padding: 1rem 0;
+  display: inline-block;
+  font-size: 2rem;
+}
+.btn__main {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.btn {
+  background-color: #82bd3e;
+  outline: 0;
+  border: 0;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border-left: groove;
+}
+.btn:focus {
+  color: #82bd3e;
+  background-color: #fff;
+}
+.show {
+  display: none;
+}
+
+.active {
+  color: #82bd3e !important;
+}
+
+/* FHL PROJECT CSS--------------------------------------------------------- */
+.fhl__project {
+  margin: 2rem 0;
+}
+.fhl__project .container {
+  outline: 0;
+}
+
+.fhl__project .container .project_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 2rem;
+  grid-auto-flow: dense;
+}
+.fhl__project .container .project_box .project_img_box {
+  position: relative;
+}
+.fhl__project .container .project_box .project_img_box .overlay {
+  background-color: rgba(78, 78, 78, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.2s step-end;
+  border-radius: 10px;
+}
+.fhl__project .container .project_box .project_img_box .project__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #82bd3e;
+  font-size: 3rem;
+  z-index: 99;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.fhl__project .container .project_box .project_img_box:hover .overlay {
+  visibility: hidden;
+}
+.fhl__project .container .project_box .project_img_box:hover .project__icon {
+  font-size: 5rem;
+  transition: all 0.5s linear;
+}
+.fhl__project .container .project_box .project_img_box img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.fhl__project .container .project_box .project_img_box .close_icon {
+  position: absolute;
+  margin: 1rem;
+  color: #82bd3e;
+  font-size: 2.5rem;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: none;
+}
+.full_image {
+  position: fixed !important;
+  width: 75vh;
+  height: 85vh;
+  z-index: 1000;
+  /* margin: 0 auto; */
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.blur {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(112, 112, 112, 0.952);
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
