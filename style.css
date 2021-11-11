@@ -302,7 +302,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
 }
 .full_image {
   position: fixed !important;
-  width: 75vh;
+  width: 90vw;
   height: 85vh;
   z-index: 1000;
   top: 50px;
