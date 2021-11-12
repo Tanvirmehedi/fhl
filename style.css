@@ -39,7 +39,7 @@ body {
 header .mail {
   background-color: #82bd3e;
   text-align: center;
-  padding: 0.3rem;
+  padding: 0.6rem;
   color: #fff;
   font-size: 1.4em;
   font-style: italic;
@@ -199,12 +199,38 @@ nav .nav__menu .nav__item .nav__links:hover a {
 /* CSS BASIC CSS-------------------------------------------------------------------------------------------------------------------------------------------------- */
 .fhl__title {
   text-align: center;
+  padding-bottom: 3rem;
+}
+.fhl__title .title__text .title_icon {
+  margin-right: 1rem;
+  color: #82bd3e;
+  font-size: 3rem;
 }
 .fhl__title .title__text {
-  color: #82bd3e;
+  color: rgb(102, 102, 102);
   padding: 1rem 0;
   display: inline-block;
   font-size: 2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.fhl__title .title__text::after {
+  background-color: #82bd3e;
+  height: 5%;
+  width: 91%;
+  content: '';
+  position: absolute;
+  bottom: 17%;
+  right: 0;
+}
+.fhl__title .title__text::before {
+  background-color: #82bd3e;
+  height: 5%;
+  width: 75%;
+  content: '';
+  position: absolute;
+  bottom: 3%;
+  left: -4%;
 }
 .btn__main {
   font-size: 1.5rem;
