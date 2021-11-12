@@ -196,6 +196,46 @@ nav .nav__menu .nav__item .nav__links:hover a {
   margin-right: 1rem;
   font-size: 2rem;
 }
+
+/* Branding CSS ------------------------------------------------ */
+.fhl__branding {
+  padding: 5rem 0;
+  background-color: #f7f7f7e5;
+}
+.branding__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}
+
+.fhl__branding .branding__text h3 {
+  font-size: 1.4rem;
+  color: rgb(85, 85, 85);
+  letter-spacing: 0.2rem;
+  font-style: italic;
+}
+.fhl__branding .branding__text h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #82bd3e;
+  margin-top: -0.4rem;
+}
+.fhl__branding .branding__text h2 span {
+  font-weight: 300;
+  font-size: 0.7rem;
+  display: block;
+  margin-top: -0.4rem;
+}
+.fhl__branding .branding__text p {
+  text-align: center;
+  font-weight: 300;
+  max-width: 85vw;
+  font-size: 1.3rem;
+  word-spacing: 0.4rem;
+  margin-top: -0.2rem;
+}
 /* CSS BASIC CSS-------------------------------------------------------------------------------------------------------------------------------------------------- */
 .fhl__title {
   text-align: center;
