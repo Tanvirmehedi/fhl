@@ -1,3 +1,14 @@
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: #6d767e69;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #82bd3e;
+}
+
 html,
 button,
 div,
@@ -227,14 +238,16 @@ nav .nav__menu .nav__item .nav__links:hover a {
   font-size: 0.7rem;
   display: block;
   margin-top: -0.4rem;
+  color: #6d767e;
 }
 .fhl__branding .branding__text p {
   text-align: center;
   font-weight: 300;
   max-width: 85vw;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   word-spacing: 0.4rem;
   margin-top: -0.2rem;
+  padding: 0 4rem;
 }
 /* CSS BASIC CSS-------------------------------------------------------------------------------------------------------------------------------------------------- */
 .fhl__title {
@@ -258,7 +271,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
   background-color: #82bd3e;
   height: 5%;
   width: 91%;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 17%;
   right: 0;
@@ -267,7 +280,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
   background-color: #82bd3e;
   height: 5%;
   width: 75%;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 3%;
   left: -4%;
@@ -287,7 +300,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
   cursor: pointer;
   border-left: groove;
 }
-.btn:focus {
+.btn:active {
   color: #82bd3e;
   background-color: #fff;
 }
@@ -368,8 +381,11 @@ nav .nav__menu .nav__item .nav__links:hover a {
 }
 .full_image {
   position: fixed !important;
-  width: 90vw;
+  width: 88vw;
   height: 85vh;
+  box-shadow: 0px 1px 40px 2px rgba(130, 189, 62, 0.75);
+  -webkit-box-shadow: 0px 1px 40px 2px rgba(130, 189, 62, 0.75);
+  -moz-box-shadow: 0px 1px 40px 2px rgba(130, 189, 62, 0.75);
   z-index: 1000;
   top: 50px;
   left: 50%;
@@ -421,4 +437,22 @@ nav .nav__menu .nav__item .nav__links:hover a {
   font-size: 3rem;
   color: #82bd3e;
   z-index: 2000;
+}
+
+/* fhl__brushier */
+
+.fhl__brushier {
+  margin: 5rem 0;
+}
+.fhl__brushier .container {
+}
+
+.fhl__brushier .container .brushier_box {
+}
+.fhl__brushier .container .brushier_box .brushier_title {
+}
+.fhl__brushier .container .brushier_box .brushier_text {
+}
+
+.fhl__brushier .container .brushier_box .brushier_btn {
 }

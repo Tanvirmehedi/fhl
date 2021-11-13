@@ -16,7 +16,16 @@ showNav(navIcon,navMenu)
 
 const dropDown = document.querySelector('.dropDown a');
 const dropDownUl = document.querySelector('.dropDown__menu ul');
-showNav(dropDown,dropDownUl)
+showNav(dropDown,dropDownUl);
+
+// Function  for nav 
+function showNav(ClickAbleBtn,toggleAble){
+    ClickAbleBtn.addEventListener('click',function(){
+        toggleAble.classList.toggle('show')
+    })
+}
+
+
 
 // project Big Image
 
@@ -37,16 +46,14 @@ closeBtns.forEach((btn)=>{
     })
 })
 
-// Function  for nav 
-function showNav(ClickAbleBtn,toggleAble){
-    ClickAbleBtn.addEventListener('click',function(){
-        toggleAble.classList.toggle('show')
-    })
-}
+
 
 // Project Function
 
 function removeOverlayAndIcon(){
+
+        document.querySelector('body').style.overflow='hidden';
+
         const blur =document.querySelector('#blur');
         blur.classList.add('blur');
 
@@ -64,7 +71,6 @@ function removeOverlayAndIcon(){
         ProjectDetails.forEach((details)=>{
         details.style.display="block";
         })
-
         closeBtns.forEach((closeBtn)=>{
         closeBtn.style.display='block';
         })
@@ -73,6 +79,8 @@ function removeOverlayAndIcon(){
 
 // Back To normal
 function addOverlayAndIcon(){
+    document.querySelector('body').style.overflow='scroll';
+
     const blur =document.querySelector('#blur');
         blur.classList.remove('blur');
 
