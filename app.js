@@ -104,4 +104,6 @@ function addOverlayAndIcon(){
         }) 
 }
 
- 
+
+ const videoSpeed = document.querySelector('.brushier_bg_video');
+ videoSpeed.playbackRate=0.6;

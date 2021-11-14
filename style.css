@@ -271,7 +271,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
   background-color: #82bd3e;
   height: 5%;
   width: 91%;
-  content: "";
+  content: '';
   position: absolute;
   bottom: 17%;
   right: 0;
@@ -280,7 +280,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
   background-color: #82bd3e;
   height: 5%;
   width: 75%;
-  content: "";
+  content: '';
   position: absolute;
   bottom: 3%;
   left: -4%;
@@ -299,10 +299,11 @@ nav .nav__menu .nav__item .nav__links:hover a {
   letter-spacing: 1.5px;
   cursor: pointer;
   border-left: groove;
+  transition: all 0.5s linear;
 }
-.btn:active {
-  color: #82bd3e;
+.btn:hover {
   background-color: #fff;
+  color: #82bd3e !important;
 }
 .show {
   display: none;
@@ -442,17 +443,100 @@ nav .nav__menu .nav__item .nav__links:hover a {
 /* fhl__brushier */
 
 .fhl__brushier {
-  margin: 5rem 0;
+  padding: 4rem 0;
+  position: relative;
+}
+.fhl__brushier::before {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #6d767e93;
+  position: absolute;
+  z-index: 10;
+}
+.fhl__brushier .brushier_bg_video {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
 }
 .fhl__brushier .container {
+  outline: 0;
 }
 
 .fhl__brushier .container .brushier_box {
+  margin-top: -3rem;
+  position: relative;
+  z-index: 22;
 }
+
+.fhl__brushier .container .brushier_box .brushier_study {
+  font-size: 4rem;
+  margin-bottom: -2rem;
+  font-style: italic;
+  word-spacing: -0.8rem;
+  font-weight: bold;
+  color: #f7f8f891;
+  text-transform: capitalize;
+  transition: all 0.5s linear;
+}
+
+.fhl__brushier .container .brushier_box .brushier_study span i {
+  color: #82bd3e;
+  margin-right: 1rem;
+  animation: studyBlink 6s infinite;
+}
+
+@keyframes studyBlink {
+  0% {
+    color: #82bd3e;
+    font-size: 2rem;
+    transform: rotate(40deg);
+  }
+  10% {
+    color: #b0c599;
+    font-size: 1.9rem;
+  }
+  20% {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  30% {
+    color: azure;
+    font-size: 1.7rem;
+  }
+  50% {
+    color: #2b440e;
+    font-size: 2rem;
+    transform: rotate(-360deg);
+  }
+}
+
 .fhl__brushier .container .brushier_box .brushier_title {
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.fhl__brushier .container .brushier_box .brushier_title::first-letter {
+  color: #82bd3e;
+  font-size: 4rem;
+  font-style: italic;
 }
 .fhl__brushier .container .brushier_box .brushier_text {
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  text-align: justify;
+  font-weight: 200;
 }
 
 .fhl__brushier .container .brushier_box .brushier_btn {
+  font-size: 2rem;
+  color: #fff;
 }
