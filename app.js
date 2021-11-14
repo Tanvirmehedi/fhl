@@ -107,3 +107,8 @@ function addOverlayAndIcon(){
 
  const videoSpeed = document.querySelector('.brushier_bg_video');
  videoSpeed.playbackRate=0.6;
+
+ const copyright = document.querySelector('.copyright span');
+
+ let date = new Date();
+ copyright.textContent=date.getFullYear();

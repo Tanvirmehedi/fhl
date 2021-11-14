@@ -156,6 +156,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
   width: 100%;
   min-height: 86vh;
   background-image: url(img/bg/hero-big.jpg);
+  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
@@ -271,7 +272,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
   background-color: #82bd3e;
   height: 5%;
   width: 91%;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 17%;
   right: 0;
@@ -280,7 +281,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
   background-color: #82bd3e;
   height: 5%;
   width: 75%;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 3%;
   left: -4%;
@@ -433,11 +434,15 @@ nav .nav__menu .nav__item .nav__links:hover a {
 .scroll_icon {
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 0px;
   margin: 2rem;
-  font-size: 3rem;
+  font-size: 5rem;
   color: #82bd3e;
   z-index: 2000;
+  transition: all 0.5s linear;
+}
+.scroll_icon:hover {
+  color: #6d767e;
 }
 
 /* fhl__brushier */
@@ -447,7 +452,7 @@ nav .nav__menu .nav__item .nav__links:hover a {
   position: relative;
 }
 .fhl__brushier::before {
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -510,11 +515,6 @@ nav .nav__menu .nav__item .nav__links:hover a {
     color: azure;
     font-size: 1.7rem;
   }
-  50% {
-    color: #2b440e;
-    font-size: 2rem;
-    transform: rotate(-360deg);
-  }
 }
 
 .fhl__brushier .container .brushier_box .brushier_title {
@@ -542,8 +542,9 @@ nav .nav__menu .nav__item .nav__links:hover a {
 }
 
 .fhl__footer {
-  padding: 3rem 0;
+  padding-top: 3rem;
   background: #f7f7f7e5;
+  background-color: #6d767e1e;
 }
 
 .fhl__footer .footer__container {
@@ -552,29 +553,44 @@ nav .nav__menu .nav__item .nav__links:hover a {
   grid-auto-rows: max-content;
 }
 
-.footer_title {
+.footer_title span {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #6d767e;
+  letter-spacing: 2.5%;
 }
 .footer_title img {
+  width: 40%;
   display: inline-block;
+  margin-right: 1rem;
 }
 .footer_menu {
+  display: flex;
+  align-items: flex-end;
   outline: 0;
 }
 .footer_menu ul .listed {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  flex-direction: row;
   justify-content: space-around;
 }
 .footer_menu ul .listed a {
   color: #82bd3e;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin: 1rem 0.5rem;
+  transition: all 0.5s linear;
+  font-weight: 600;
+}
+.footer_menu ul .listed a:hover {
+  color: #6d767e;
 }
 .footer_social {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 .footer_social a {
   margin: 1rem 0;
@@ -586,5 +602,49 @@ nav .nav__menu .nav__item .nav__links:hover a {
 }
 
 .footer_social a:hover i {
-  font-size: 3.2rem;
+  color: #6d767e;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #82bd3e;
+  color: #6d767e;
+  font-size: 1.5rem;
+}
+
+/* fhl__hero project */
+section.fhl__hero.project {
+  background-image: url(/img/bg/bailey-anselme-Bkp3gLygyeA-unsplash.jpg);
+  background-position: center;
+  background-origin: padding-box;
+  min-height: 25vh;
+}
+
+/* --------------------------------Bread Crumb CSS----------------------------------- */
+.fhl__breadcrumb {
+  padding: 1rem;
+  background-color: #eeeff0;
+}
+.breadcrumb_item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+
+.fhl__breadcrumb .breadcrumb_item li {
+  line-height: 0;
+}
+.fhl__breadcrumb .breadcrumb_item a {
+  line-height: 0;
+  padding: 0.5rem;
+  color: #6d767e;
+  font-size: 1.4rem;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
