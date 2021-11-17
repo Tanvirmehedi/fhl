@@ -1,0 +1,26 @@
+{
+  "name": "fhl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanvirmehedi/fhl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanvirmehedi/fhl/issues"
+  },
+  "homepage": "https://github.com/Tanvirmehedi/fhl#readme",
+  "engines": {
+    "node": "v16.13.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
